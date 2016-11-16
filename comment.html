@@ -1,22 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Fashion</title>
-    <!--<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />-->
-    <!--&lt;!&ndash; jQuery (necessary for Bootstrap's JavaScript plugins) &ndash;&gt;-->
-    <!--<script src="js/jquery.min.js"></script>-->
-    <!--&lt;!&ndash; Custom Theme files &ndash;&gt;-->
-    <!--<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />-->
-    <!--&lt;!&ndash; Custom Theme files &ndash;&gt;-->
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
-    <!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />-->
-    <!--<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>-->
-    <!--&lt;!&ndash; for bootstrap working &ndash;&gt;-->
-    <!--<script type="text/javascript" src="js/bootstrap.js"></script>-->
-    <!--&lt;!&ndash; //for bootstrap working &ndash;&gt;-->
-    <!--&lt;!&ndash; web-fonts &ndash;&gt;-->
-    <!--<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>-->
-    <!--<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>-->
+    <title></title>
+
     <script src="js/responsiveslides.min.js"></script>
     <script>
         $(function () {
@@ -26,6 +12,22 @@
                 speed: 500,
                 namespace: "callbacks",
                 pager: true,
+            });
+        });
+    </script>
+    <script src="js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#owl-demo").owlCarousel({
+                items : 4,
+                lazyLoad : true,
+                autoPlay : true,
+                navigation : true,
+                navigationText : ["", ""],
+                rewindNav : false,
+                scrollPerPage : false,
+                pagination : false,
+                paginationNumbers : false,
             });
         });
     </script>
@@ -153,12 +155,12 @@
                             <textarea onfocus="if(this.value == '评论内容*') this.value='';" onblur="if(this.value == '') this.value='Message*';">评论内容*</textarea>
                         </div>
                         <!--<div>-->
-                            <!--<div class="sky_form">-->
-                                <!--<label class="checkbox"><input type="checkbox" name="checkbox"><i>消息通知</i></label>-->
-                            <!--</div>-->
-                            <div class="button send_button">
-                                <input type="submit" value="发贴">
-                            </div>
+                        <!--<div class="sky_form">-->
+                        <!--<label class="checkbox"><input type="checkbox" name="checkbox"><i>消息通知</i></label>-->
+                        <!--</div>-->
+                        <div class="button send_button">
+                            <input type="submit" value="发贴">
+                        </div>
                         <!--</div>-->
 
                     </form>
@@ -167,21 +169,155 @@
                     <header>
                         <h4 class="title-head">中学信息技术相关论坛</h4>
                     </header>
-                    <div class="course_demo1">
-                        <ul id="flexiselDemo">
-                            <li>
-                                <a href="#"><img src="images/wps.jpg" alt="" /><h5>办公软件专栏</h5></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="images/flash.jpg" alt="" /><h5>flash动画专栏</h5></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="images/pshop.jpg" alt="" /><h5>图片处理及多媒体专栏</h5></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="images/scratch.png" alt="" /><h5>Scratch专栏</h5></a>
-                            </li>
-                        </ul>
+                    <div class="Recent-wroks"><!-- start services -->
+                        <div class="wrap">
+                            <div class="Recent-wrok">
+
+                                <!----start-img-cursual---->
+                                <div id="owl-demo" class="owl-carousel">
+                                    <div class="item">
+                                        <div class="cau_left">
+                                            <img src="images/wps.jpg" >
+                                        </div>
+                                        <div class="cau_left">
+                                            <h5><a href="#">办公软件专栏</a></h5>
+                                            <p>
+                                                办公软件专栏
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="cau_left">
+                                            <img src="images/flash.jpg" >
+                                        </div>
+                                        <div class="cau_left">
+                                            <h5><a href="#">flash动画专栏</a></h5>
+                                            <p>
+                                                flash动画专栏
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="cau_left">
+                                            <img src="images/pshop.jpg" >
+                                        </div>
+                                        <div class="cau_left">
+                                            <h5><a href="#">图片处理及多媒体专栏</a></h5>
+                                            <p>
+                                                图片处理及多媒体专栏
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="cau_left">
+                                            <img src="images/scratch.png" >
+                                        </div>
+                                        <div class="cau_left">
+                                            <h5><a href="#">Scratch专栏</a></h5>
+                                            <p>
+                                                Scratch专栏
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="cau_left">
+                                            <img src="images/net.gif" >
+                                        </div>
+                                        <div class="cau_left">
+                                            <h5><a href="#">互联网专栏</a></h5>
+                                            <p>
+                                                互联网专栏
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="cau_left">
+                                            <img src="images/robot.png" >
+                                        </div>
+                                        <div class="cau_left">
+                                            <h5><a href="#">机器人专栏</a></h5>
+                                            <p>
+                                                机器人专栏
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="cau_left">
+                                            <img src="images/internet.jpg" >
+                                        </div>
+                                        <div class="cau_left">
+                                            <h5><a href="#">网络制作及基础专栏</a></h5>
+                                            <p>
+                                                网络制作及基础专栏
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="cau_left">
+                                            <img src="images/keyboard.jpeg" >
+                                        </div>
+                                        <div class="cau_left">
+                                            <h5><a href="#">程序员设计专栏</a></h5>
+                                            <p>
+                                                程序员设计专栏
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="cau_left">
+                                            <img src="images/scratch.png" >
+                                        </div>
+                                        <div class="cau_left">
+                                            <h5><a href="#">Scratch专栏</a></h5>
+                                            <p>
+                                                Scratch专栏
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="cau_left">
+                                            <img src="images/wps.jpg" >
+                                        </div>
+                                        <div class="cau_left">
+                                            <h5><a href="#">办公软件专栏</a></h5>
+                                            <p>
+                                                办公软件专栏
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="cau_left">
+                                            <img src="images/flash.jpg" >
+                                        </div>
+                                        <div class="cau_left">
+                                            <h5><a href="#"> Flash专栏</a></h5>
+                                            <p>
+                                                Flash专栏
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="cau_left">
+                                            <img  src="images/wps.jpg">
+                                        </div>
+                                        <div class="cau_left">
+                                            <h5><a href="#">办公软件专栏</a></h5>
+                                            <p>
+                                                办公软件专栏
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!----//End-img-cursual---->
+                            </div>
+                            <script type="text/javascript" src="js/nivo-lightbox.min.js"></script>
+                            <script type="text/javascript">
+                                $(document).ready(function(){
+                                    $('#nivo-lightbox-demo a').nivoLightbox({ effect: 'fade' });
+                                });
+                            </script>
+
+                        </div>
                     </div>
                     <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
                     <script type="text/javascript">
@@ -213,22 +349,6 @@
                     </script>
                     <script type="text/javascript" src="js/jquery.flexisel.js"></script>
 
-                    <div class="course_demo1">
-                        <ul id="flexiselDemo1">
-                            <li>
-                                <a href="#"><img src="images/net.gif" alt="" /><h5>物联网专栏</h5></a>
-                            </li>
-                            <li>
-                                <a href="classManagement.html"><img src="images/robot.png" alt="" /><h5>机器人专栏</h5></a>
-                            </li>
-                            <li>
-                                <a href="classManagement.html"><img src="images/internet.jpg" alt="" /><h5>网络制作及基础专栏</h5></a>
-                            </li>
-                            <li>
-                                <a href="classManagement.html"><img src="images/keyboard.jpeg" alt="" /><h5>程序员设计专栏</h5></a>
-                            </li>
-                        </ul>
-                    </div>
                     <script type="text/javascript">
                         $(window).load(function() {
                             $("#flexiselDemo1").flexisel({
