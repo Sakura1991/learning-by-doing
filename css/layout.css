@@ -1,0 +1,29 @@
+
+/*@import url(navi.css);*/
+/*@import url(forms.css);*/
+/*@import url(tables.css);*/
+/*@import url(featured_slide.css);*/
+/*@import url(loginslider.css);*/
+
+/*.justify{text-align:justify;}*/
+/*.bold{font-weight:bold;}*/
+/*.center{text-align:center;}*/
+/*.right{text-align:right;}*/
+/*.clear{clear:both;}*/
+/*!*br.clear{clear:both; margin-top:-15px;}*!*/
+
+/*a{outline:none; text-decoration:none;}*/
+
+div.wrapper{
+	display:block;
+	width:100%;
+	margin:0;
+	text-align:left;
+	background-color: #AEB9D7;
+	}
+.col0{
+	/*height: 30px;*/
+	color:#FFFFFF;
+	background-color:#AEB9D7
+}
+
